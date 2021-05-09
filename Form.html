@@ -92,11 +92,18 @@ label { font-family: Arial, sans-serif; }
 
 
 
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .view {
+        width: 400px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .view {
+        width: 600px;
+    }
 }
 </style>
 </head>
@@ -123,11 +130,11 @@ label { font-family: Arial, sans-serif; }
     <div id= left>
 	<fieldset>
 	<legend>Contact Information:</legend>
-	<label>First Name: <br><input type="text" name="fname" id="fname"></label><br><br>
-	<label>Last Name: <br><input type="text" name="lname" id="lname"></label><br><br>
-  <label>E-Mail: <br><input type="text" name="email" id="email"></label><br><br>
+	<label>First Name: <br><input type="text" name="First Name" id="fname"></label><br><br>
+	<label>Last Name: <br><input type="text" name="Last Name" id="lname"></label><br><br>
+  <label>E-Mail: <br><input type="text" name="Email" id="email"></label><br><br>
 	<label for="myComments">Any Comments or Questions?</label><br>
-	<textarea name="comment" id="comment" rows="4" cols="60"></textarea>
+	<textarea name="Comment" id="comment" rows="4" cols="60"></textarea>
   <br> <br> 
   </fieldset>
   </div>
@@ -144,7 +151,7 @@ label { font-family: Arial, sans-serif; }
    <input type="radio" id="Depends on the scenario" name="agree" value="Depends on the scenario">
    <label for="Depends on the scenario">Depends on the scenario</label> <br>
   <br>
-    <label>Which Social Media(s) Do You Censors Users?</label><br>
+    <label>Which Social Media(s) Do You Believe Censors Users?</label><br>
 	<input type="checkbox" id="Twitter" name="Twitter" value="Twitter">
 	<label for="Twitter"> Twitter</label><br>
 	<input type="checkbox" id="Facebook" name="Facebook" value="Facebook">
@@ -155,7 +162,7 @@ label { font-family: Arial, sans-serif; }
 	<label for="Youtube"> Youtube</label><br>
   <br>
   <label for="myComments">What are your views on censoring users?</label><br>
-	<textarea name="opinion" id="opinion" rows="3" cols="60"></textarea>
+	<textarea name="Opinion" id="opinion" rows="3" cols="60"></textarea>
   
 	</fieldset>
 	</div>
