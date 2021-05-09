@@ -14,8 +14,8 @@
 
 .column {
   float: left;
-  padding: 10px;
- ' height: 300px; 
+  padding: 10px 5px  5px 5px;
+ 
 }
 
 h2{
@@ -30,7 +30,7 @@ h2{
 
 .middle {
   width: 40%;
-  
+ 
 }
 
 .right {
@@ -73,17 +73,16 @@ ul.a {
 }
 
 
-@media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
-    }
-}
-
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
-    .view {
-        width: 600px;
-    }
+   .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .column {
+    width: 100%;
+  }
 }
 </style>
 </head>
@@ -113,13 +112,13 @@ ul.a {
   <source src="ExampleVid.ogg" type="video/ogg">
   Your browser does not support the video tag.
   
-</video>   
+</video>  <br> 
 <pr> Interview with Atorney General <br> about social media censorship</pr>
 
  
   </div>
   
-  <div class="column middle" style="background-color:white;">
+  <div class="column middle" >
   
     <h2>Examples Of Censorship Today</h2>
  <ul class="a">

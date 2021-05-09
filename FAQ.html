@@ -13,6 +13,19 @@
 <link rel="stylesheet" href="style.css">
 <style>
 
+body{
+   background-image: url('background2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+.row {
+    display: flex;
+}
+
 #QnA { background-color:  #f0f5f5;
        text-align: center; 
            color: #black;
@@ -27,7 +40,7 @@
   width 10%
 }
  .more a:link, .more.a:visited {
-  background-color: #00ace6;
+  background-color: #f0f5f5;
   color: white;
   padding: 15px 25px;
   text-align: center;
@@ -52,14 +65,21 @@
 
 @media screen and (max-width: 540px) {
     .view {
-        width: 400px;
-    }
+    width: 400%;
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
     .view {
-        width: 600px;
-    }
+    width: 600%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+ .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 </style>
 </head>
@@ -79,9 +99,9 @@
   <a href="Refrences.html" class="right">References</a>
 
 </div>
-<div class="more"> 
- <a href="https://www.lawyers.com/legal-info/criminal/the-first-amendment-and-free-speech-rights-faqs.html" > More FAQs </a>
- </div>
+<div class="row"> 
+
+ 
 <div id="QnA"> 
  <h1>FAQs</h2>
  <h4> Q:  Why is there so much censorship and bias in social media? </h4>
@@ -96,6 +116,10 @@
           compete with the monopolies and limit their control.   <br> </pr  
  <br>
  <br>
+</div>
+
+<div class="more"> 
+ <a href="https://www.lawyers.com/legal-info/criminal/the-first-amendment-and-free-speech-rights-faqs.html" > More FAQs </a>
  </div>
 
 </div>
